@@ -1,32 +1,31 @@
 QUESTIONS:
 
-What is the purpose of this program? Game? Strategy? – Both a game and model. Model based on the game as well as run through certain amount of spins for stats. 
+What is the purpose of this program? Game? Strategy? – Both a game and model. 
 
 What is the output you would like to see? All heads or all tails of wheel, amount of spins used to get to that position.  
 
-What is the input? Amount of coins, spins, reveals, max coins 
+What is the input? Amount of coins, spins, reveals. 
 
 Interactive with the user? Yes, pick the revealed coins that user would like to turn over. Model and gameplay mode. 
 
 Change number of coins? Want a max number of coins, CLARIFY (limitation of the array)!!!! Smallest number of coins is 1.
 
-Change number of spins each time? Min = 1 spin  Max = program stops running.  Clarify whether you can change the number of coins revealed each spin.  
+Change number of spins each time? Min = 1 spin  Max = unknown.  Clarify whether you can change the number of coins revealed each spin.  
 
-Allowed to pick the coins to reveal? How many? Lock in number of reveals each spin for entire game…CLARIFY!!!!!
+Allowed to pick the coins to reveal? How many? Lock in number of reveals each spin for entire game…CLARIFY!!!!! Gameplay allows you to pick coins to reveal.
 
 Do you have a program that will run the program? Or is this through console? Based on time; what can we give him in a certain amount of time.  Deliverables. 
 
-All possibilities can be allowed even if it is a win at the beginning.
+All possibilities can be allowed even if it is a win before first spin.
 
 TO DO:
 
 Identify intended process (go as light weight as you can/ AGILE: Crystal Clear, XP, find a template for this process). 
 
-Crystal Clear Methodology
-
-Check out the requirement specification template on Moodle
+Crystal Clear Methodology 
 
 Set up a repo with document of requirements.
+
 
 Playable demo:
 
@@ -34,22 +33,24 @@ Array of heads or tails values
 
 Position in the array is the position on the wheel 
 
-WHEEL GAMEPLAY Setup: 
+	WHEEL GAMEPLAY Setup: 
 	
-Initialize the wheel 
-		Get user input:
-			Number of coins
-			Number of spins 
-	Display the wheel 
-			Array of Heads and Tails 
-	Spin the wheel
-		Uncover coins 
-		Flip coins 
-		Check coins 
-		Repeat 
+		Initialize the wheel 
+			Get user input:
+				Number of coins
+				Number of spins 
+		
+		Display the wheel 
+				Array of Heads and Tails 
+	
+		Spin the wheel
+			Uncover coins 
+			Flip coins 
+			Check coins 
+			Repeat 
 
-User Input Requirements:
+		User Input Requirements:
 
-		Number of coins to be used (Min = 1, limit MAX to max capacity of array)
+			Number of coins to be used (Min = 1, limit MAX to max capacity of array)
 
-		Number of Spins (limit max number of spins?)
+			Number of Spins (limit max number of spins?)
