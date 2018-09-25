@@ -61,6 +61,9 @@ public class Coins {
     //Converts boolean values on wheel to heads/tails
     private static void displayWheel(boolean[] array){
 
+        System.out.println();
+        System.out.println("Wheel State:");
+
         for(int i = 0; i < array.length; i++){
 
             if(array[i] == true){
@@ -71,6 +74,7 @@ public class Coins {
             }
         }
 
+        System.out.println();
     }
 
     public static void main(String args[]){

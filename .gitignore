@@ -1,1 +1,4 @@
 *.javac
+*.class
+.gitignore
+.idea
