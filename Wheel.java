@@ -19,10 +19,6 @@ public class Wheel {
 
         for (int i = 0; i < coins; i++)
             this.wheel[i] = random.nextBoolean();
-
-        if (this.checkWheel()) {
-            System.out.println("Congrats! You Win!");
-        }
     }
 
     /*
@@ -48,7 +44,7 @@ public class Wheel {
      * Returns true if the win condtions are met
      * and false if they are not.
      */
-    private boolean checkWheel() {
+    public boolean checkWheel() {
         
         for(int coin = 1; coin < this.wheel.length; coin++)
             if(this.wheel[coin] != this.wheel[0])

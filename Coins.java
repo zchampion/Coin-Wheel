@@ -19,5 +19,8 @@ public class Coins {
 
         Wheel gameWheel = new Wheel(coins, reveals, spins);
         System.out.println(gameWheel.toString());
+
+        if (gameWheel.checkWheel())
+            System.out.println("Congrats! You Win!");
     }
 }
