@@ -2,18 +2,30 @@ import java.util.*;
 
 public class Coins {
 
-    public static void userInput(){
+    /*
+     * Takes in the user input for the game information & builds the wheel.
+     */
+    public static void userInput(String[] sysArgs){
 
         Scanner in = new Scanner(System.in);
+        int coins, reveals, spins;
 
-        System.out.println("How many coins in play?: ");
-        int coins = in.nextInt();
+        if (sysArgs.length >= 3) {
 
-        System.out.println("How many do you wish to reveal each turn?: ");
-        int reveals = in.nextInt();
+            coins = Integer.parseInt(sysArgs[0]);
+            reveals = Integer.parseInt(sysArgs[1]);
+            spins = Integer.parseInt(sysArgs[2]);
 
-        System.out.println("How many spins?: ");
-        int spins = in.nextInt();
+        } else {
+            System.out.println("How many coins in play?: ");
+            coins = in.nextInt();
+
+            System.out.println("How many do you wish to reveal each turn?: ");
+            reveals = in.nextInt();
+
+            System.out.println("How many spins?: ");
+            spins = in.nextInt();
+        }
 
         buildWheel(coins, reveals, spins);
 
@@ -61,6 +73,9 @@ public class Coins {
     //Converts boolean values on wheel to heads/tails
     private static void displayWheel(boolean[] array){
 
+        System.out.println();
+        System.out.println("Wheel State:");
+
         for(int i = 0; i < array.length; i++){
 
             if(array[i] == true){
@@ -71,11 +86,12 @@ public class Coins {
             }
         }
 
+        System.out.println();
     }
 
     public static void main(String args[]){
 
-        userInput();
+        userInput(args);
 
     }
 }
