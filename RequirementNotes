@@ -54,3 +54,20 @@ Position in the array is the position on the wheel
 			Number of coins to be used (Min = 1, limit MAX to max capacity of array)
 
 			Number of Spins (limit max number of spins?)
+			
+
+Deliverables due 9/27 (Thurs.):
+
+	Grow the product to be more visible in the user interface
+	User interface example after entering in # of coins, reveals, spins:
+				
+				Wheel State: 
+			
+				1 2 3 4 5 6 7 8 
+				* T * H * * H * 
+				
+	Specifications: 
+		
+		The coins revealed will be randomized (user does not get to choose)
+		User does get to choose which to flip 
+		Always the same number of reveals each spin 
