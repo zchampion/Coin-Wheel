@@ -17,10 +17,12 @@ public class Coins {
         inputPrompt = "How many spins?: ";
         spins = getInput(in, inputPrompt);
 
+
         in.close();
 
         Wheel gameWheel = new Wheel(coins, reveals, spins);
         System.out.println(gameWheel.toString());
+        gameWheel.userWheel(coins, reveals);
 
         if (gameWheel.checkWheel())
             System.out.println("Congrats! You Win!");
