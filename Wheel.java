@@ -40,6 +40,42 @@ public class Wheel {
     }
 
     /*
+     * Generate random covered coins in the game
+     * Print the wheel that user sees
+    */
+    public void userWheel(int coins, int reveals) {
+
+        Random random = new Random();
+        int temp = 0;
+        int hide = coins - reveals;
+
+        List<Integer> list = new ArrayList<Integer>();
+        // Generating random indexes
+        for (int i = 1; i <= hide; i++) {
+            temp = random.nextInt(this.wheel.length);
+            if (!(list.contains(temp))) {
+                list.add(temp);
+            }
+            else {   i--;
+            }
+        }
+        System.out.println();
+        System.out.println("The wheel that user sees:");
+
+        for (int j = 0; j < this.wheel.length; j++) {
+
+            if (list.contains(j)) {
+                System.out.print("_ ");
+            } else if (this.wheel[j] == false) {
+                System.out.print("T ");
+            } else if (this.wheel[j] == true) {
+                System.out.print("H ");
+
+            }
+        }
+    }
+
+    /*
      * Checks the win conditions of the game.
      * Returns true if the win condtions are met
      * and false if they are not.
